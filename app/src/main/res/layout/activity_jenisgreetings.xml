@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEEAE6"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".jeniscoffee.jenisgreetings">
+
+        <TextView
+            android:id="@+id/text1"
+            android:fontFamily="@font/harbringer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="JENIS COFFEE"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <RelativeLayout
+            android:id="@+id/jeniskopi1"
+            android:layout_below="@id/text1"
+            android:layout_width="330dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/espresso"
+            android:layout_centerHorizontal="true">
+
+            <ToggleButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/toggle_fav"
+                android:onClick="onToggleFavClick"/>
+
+            <ImageView
+                android:id="@+id/bijikopi1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/bijikopi"/>
+            <TextView
+                android:id="@+id/text2"
+                android:fontFamily="@font/harbringer"
+                android:layout_below="@id/bijikopi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Kopi Espresso"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_below="@id/text2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coffe Shop membuat kopi Espresso, melibatkan air panas yang ditekan dengan mesin untuk melalui biji kopi arabika yang sudah digiling halus."
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/harbringer"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jeniskopi2"
+            android:layout_below="@id/jeniskopi1"
+            android:layout_width="330dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/latte"
+            android:layout_centerHorizontal="true">
+
+            <ToggleButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/toggle_fav"
+                android:onClick="onToggleFavClick"/>
+
+            <ImageView
+                android:id="@+id/bijikopi2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/bijikopi"/>
+            <TextView
+                android:id="@+id/text3"
+                android:fontFamily="@font/harbringer"
+                android:layout_below="@id/bijikopi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Kopi Latte"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_below="@id/text3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coffe Shop membuat kopi Latte, Latte diracik menggunakan espresso tanpa pemanis. Dengan rasio dua banding satu, antara susu dan espresso. Steamed milk dituangkan ke espresso dengan layer foam, tanpa whipped cream."
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/harbringer"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

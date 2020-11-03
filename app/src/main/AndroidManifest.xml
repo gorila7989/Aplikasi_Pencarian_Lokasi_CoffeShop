@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.findcoffee">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".detailscoffee.Parislyon" />
+        <activity android:name=".detailscoffee.Limkopi" />
+        <activity android:name=".detailscoffee.Kopimumana" />
+        <activity android:name=".detailscoffee.Fika" />
+        <activity android:name=".detailscoffee.Greetings" />
+        <activity android:name=".detailscoffee.KopiBerkata" />
+        <activity android:name=".detailscoffee.Pkp" />
+        <activity android:name=".detailscoffee.Qahwa" />
+        <activity android:name=".detailscoffee.Tekofio" />
+        <activity android:name=".detailscoffee.Xy" />
+        <activity android:name=".mapscoffee.MapsXy" />
+        <activity android:name=".mapscoffee.MapsTekofio" />
+        <activity android:name=".mapscoffee.MapsQahwa" />
+        <activity android:name=".mapscoffee.MapsPkp" />
+        <activity android:name=".mapscoffee.MapsParislyon" />
+        <activity android:name=".mapscoffee.MapsLimkopi" />
+        <activity android:name=".mapscoffee.MapsKopimumana" />
+        <activity android:name=".mapscoffee.MapsKopiberkata" />
+        <activity android:name=".mapscoffee.MapsGreetings" />
+        <activity android:name=".mapscoffee.MapsFika" />
+        <activity android:name=".jeniscoffee.jenisfika"/>
+        <activity android:name=".jeniscoffee.jenisgreetings"/>
+        <activity android:name=".jeniscoffee.jeniskopiberkata"/>
+        <activity android:name=".jeniscoffee.jeniskopimumana"/>
+        <activity android:name=".jeniscoffee.jenislimkopi"/>
+        <activity android:name=".jeniscoffee.jenisparislyon"/>
+        <activity android:name=".jeniscoffee.jenispkp"/>
+        <activity android:name=".jeniscoffee.jenisqahwa"/>
+        <activity android:name=".jeniscoffee.jenistekofio"/>
+        <activity android:name=".jeniscoffee.jenisxy"/>
+        <activity android:name=".MenuUtama" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".ListCoffe" />
+        <activity android:name=".tentang" />
+        <activity android:name=".Bantuan" />
+    </application>
+    <supports-screens
+        android:smallScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"/>
+</manifest>

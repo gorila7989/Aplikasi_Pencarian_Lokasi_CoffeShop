@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb">
+<RelativeLayout
+    android:background="#ebebeb"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".detailscoffee.Fika">
+
+    <ViewFlipper
+        android:id="@+id/temafika"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tombol">
+
+        <TextView
+            android:id="@+id/tema"
+            android:fontFamily="@font/harbringer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Fika Kedai Kafi"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tombol">
+
+        <ImageView
+            android:id="@+id/iconlokasi"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iconlokasi"
+            android:text="Jl. A. Damyati No.12 E, Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118"
+            android:textColor="@android:color/black"
+            android:textSize="17.5sp" />
+
+        <ImageView
+            android:id="@+id/iconinstagaram"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/alamat"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/instagram" />
+
+        <TextView
+            android:id="@+id/instagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alamat"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/iconinstagaram"
+            android:linksClickable="true"
+            android:text="https://www.instagram.com/fikakafiid"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="17.5sp" />
+
+        <ImageView
+            android:id="@+id/icontelephone"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/iconinstagaram"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/telephone" />
+
+        <TextView
+            android:id="@+id/telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconinstagaram"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/iconinstagaram"
+            android:text="+6281314984105"
+            android:textColor="@android:color/black"
+            android:textSize="17.5sp" />
+
+        <ImageView
+            android:id="@+id/iconjadwal"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/icontelephone"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/jadwal" />
+
+        <TextView
+            android:id="@+id/jadwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icontelephone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/iconjadwal"
+            android:text="Setiap Hari 11:00-20:00"
+            android:textColor="@android:color/black"
+            android:textSize="17.5sp"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconjadwal"
+            android:layout_centerInParent="true"
+            android:id="@+id/ratingfika"
+            android:numStars="5"
+            android:stepSize="0.5"/>
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingfika"
+            android:layout_centerInParent="true"
+            android:id="@+id/submitfika"
+            android:text="submit"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+        <Button
+            android:onClick="lokasifika"
+            android:layout_below="@id/deskripsi"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/iconlocation"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"/>
+        <Button
+            android:onClick="jenisfika"
+            android:layout_below="@id/deskripsi"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/jeniscoffe"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"/>
+</RelativeLayout>
+</ScrollView>

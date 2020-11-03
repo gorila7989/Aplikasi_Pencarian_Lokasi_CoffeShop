@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListCoffe">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parislyon"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:focusable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgparislyon"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@drawable/parislyon"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/judul1"
+            android:fontFamily="@font/harbringer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Paris-Lyon Coffe"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/imgparislyon" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Allium Hotel Lobby, Jalan Benteng Betawi No.88, RT.005/RW.015, Tanah Tinggi, Kec. Tangerang, Kota Tangerang, Banten 15148"
+            android:layout_toRightOf="@id/imgparislyon"
+            android:layout_below="@id/judul1" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/limkopi"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/parislyon">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imglimkopi"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/limkopi"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/judul2"
+                android:fontFamily="@font/harbringer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Lim Kopi Coffe"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/imglimkopi"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Jl. Taman Makam Pahlawan Taruna No.34, Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118"
+                android:layout_toRightOf="@id/imglimkopi"
+                android:layout_below="@id/judul2" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kopimumana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/limkopi"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgkopimumana"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/kopimumana"
+                android:layout_marginStart="5dp" />
+            <TextView
+                android:id="@+id/judul3"
+                android:fontFamily="@font/harbringer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/imgkopimumana"
+                android:text="Kopimumana Coffee"
+                android:textColor="@android:color/black"
+                android:textSize="19.5sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/judul3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imgkopimumana"
+                android:text="Jl. Kalipasir Indah, RT.003/RW.004, Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fika"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/kopimumana"
+        android:focusable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgfika"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/fika"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/judul4"
+                android:fontFamily="@font/harbringer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Fika Coffee"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/imgfika"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Jl. Kalipasir Indah, RT.003/RW.004, Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118"
+                android:layout_toRightOf="@id/imgfika"
+                android:layout_below="@id/judul4" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/greetings"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/fika">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imggreetings"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/greetings"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/judul5"
+                android:fontFamily="@font/harbringer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Greetings Coffee"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/imggreetings"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Jl. Kalipasir Indah, RT.003/RW.004, Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118"
+                android:layout_toRightOf="@id/imggreetings"
+                android:layout_below="@id/judul5" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kopiberkata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greetings"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgkopiberkata"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/kopiberkata1" />
+            <TextView
+                android:id="@+id/judul6"
+                android:fontFamily="@font/harbringer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/imgkopiberkata"
+                android:text="Kopi Berkata Coffee"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/judul6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imgkopiberkata"
+                android:text="Jl. Kalipasir Indah, RT.003/RW.004, Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pkp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/kopiberkata">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgpkp"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/pkp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/judul7"
+                android:fontFamily="@font/harbringer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="PKP Coffee "
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/imgpkp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Jl. Kalipasir Indah, RT.003/RW.004, Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118"
+                android:layout_toRightOf="@id/imgpkp"
+                android:layout_below="@id/judul7" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/qahwa"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/pkp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgqahwa"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/qahwa1"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/judul8"
+                android:fontFamily="@font/harbringer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Aqhwa Coffee "
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/imgqahwa"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Jl. Kalipasir Indah, RT.003/RW.004, Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118"
+                android:layout_toRightOf="@id/imgqahwa"
+                android:layout_below="@id/judul8" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tekofio"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/qahwa">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgtekofio"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/tekofio"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/judul9"
+                android:fontFamily="@font/harbringer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Tekofio Coffee"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/imgtekofio"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Jl. Kalipasir Indah, RT.003/RW.004, Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118"
+                android:layout_toRightOf="@id/imgtekofio"
+                android:layout_below="@id/judul9" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/xy"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/tekofio">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgxy"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/xy2"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/judul10"
+                android:fontFamily="@font/harbringer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Xy Coffee "
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/imgxy"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Jl. Kalipasir Indah, RT.003/RW.004, Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118"
+                android:layout_toRightOf="@id/imgxy"
+                android:layout_below="@id/judul10" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>

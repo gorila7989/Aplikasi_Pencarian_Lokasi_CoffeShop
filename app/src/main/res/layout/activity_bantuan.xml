@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wallpaperbantuan"
+    tools:context=".Bantuan">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/recyclerview_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/harbringer"
+            android:text="Bantuan"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/batas1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/icon"/>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_below="@id/batas1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/tombol">
+        <TextView
+            android:id="@+id/speksifikasi"
+            android:fontFamily="@font/harbringer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:text="System Requirements"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        <RadioButton
+            android:id="@+id/rb1"
+            android:fontFamily="@font/harbringer"
+            android:layout_below="@id/speksifikasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi ini memerlukan akses Internet"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:fontFamily="@font/harbringer"
+            android:layout_below="@id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi ini membutuhkan akses GPS"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/harbringer"
+            android:layout_below="@id/rb2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="Aplikasi ini bisa dijalankan disemua android, minimun version Jellybean" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/batas2"
+        android:layout_below="@id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_below="@id/batas2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/tombol">
+        <TextView
+            android:id="@+id/fungsibutton"
+            android:fontFamily="@font/harbringer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:text="Fungsi-Fungsi Button"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        <RadioButton
+            android:id="@+id/rb3"
+            android:fontFamily="@font/harbringer"
+            android:layout_below="@id/fungsibutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Button Coffee adalah button untuk menampilkan informasi sepuluh daftar Coffee Shops di Tangerang Kota"/>
+        <RadioButton
+            android:id="@+id/rb4"
+            android:fontFamily="@font/harbringer"
+            android:layout_below="@id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Button Maps adalah button untuk menampilkan Map lokasi user saat ini dengan Coffee Shops disekitarnya"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/harbringer"
+            android:layout_below="@id/rb4"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="Button Tentang adalah button untuk menampilkan Version dari Aplikasi ini" />
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

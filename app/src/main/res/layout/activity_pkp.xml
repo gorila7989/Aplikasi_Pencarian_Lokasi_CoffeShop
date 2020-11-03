@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".detailscoffee.Pkp">
+
+    <ViewFlipper
+        android:id="@+id/temapkp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tombol">
+
+        <TextView
+            android:id="@+id/tema"
+            android:fontFamily="@font/harbringer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="PKP Coffee"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tombol">
+
+        <ImageView
+            android:id="@+id/iconlokasi"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iconlokasi"
+            android:text="Taman Royal, Ruko Pinus Niaga Center,Jl. Permata Raya Perumahan, RT.004/RW.016, Tanah Tinggi, Kec. Cipondoh, Kota Tangerang, Banten 15141"
+            android:textColor="@android:color/black"
+            android:textSize="17.5sp" />
+
+        <ImageView
+            android:id="@+id/iconinstagaram"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/alamat"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/instagram" />
+
+        <TextView
+            android:id="@+id/instagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alamat"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/iconinstagaram"
+            android:linksClickable="true"
+            android:text="//www.instagram.com/pkpcoffee/"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="17.5sp" />
+
+        <ImageView
+            android:id="@+id/iconjadwal"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/iconinstagaram"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/jadwal" />
+
+        <TextView
+            android:id="@+id/jadwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconinstagaram"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/iconjadwal"
+            android:text="Setiap hari jam 13:00-21:00PM"
+            android:textColor="@android:color/black"
+            android:textSize="17.5sp" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconjadwal"
+            android:layout_centerInParent="true"
+            android:id="@+id/ratingpkp"
+            android:numStars="5"
+            android:stepSize="0.5"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingpkp"
+            android:layout_centerInParent="true"
+            android:id="@+id/submitpkp"
+            android:text="submit"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:onClick="lokasipkp"
+        android:layout_below="@id/deskripsi"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/iconlocation"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"/>
+    <Button
+        android:onClick="jenispkp"
+        android:layout_below="@id/deskripsi"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/jeniscoffe"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"/>
+</RelativeLayout>
+</ScrollView>

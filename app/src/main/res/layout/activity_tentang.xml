@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpapertentang"
+    tools:context=".tentang">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/namaapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FindCoffee"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true"
+                android:textSize="40sp"
+                android:fontFamily="@font/harbringer"
+                android:textColor="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namaapp"
+                android:text="Version 1.0.0"
+                android:textSize="20sp"
+                android:textColor="#ededed"
+                android:layout_centerHorizontal="true" />
+                <ImageView
+                    android:id="@+id/iconapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/version"
+                    android:src="@mipmap/icon"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iconapp"
+                    android:layout_marginTop="10dp"
+                    android:text="2020-2021 | Jordan Ra"
+                    android:textSize="20sp"
+                    android:textColor="#ededed"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+</RelativeLayout>
